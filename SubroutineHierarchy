@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
 <title>Subroutine Hieararchy</title>
 
@@ -30,8 +29,242 @@
     function drawWorld() {
 
         // TODO: Draw the content of the scene.
-        rotatingRect();  // (DELETE THIS EXAMPLE)
 
+		graphics.save();
+		graphics.scale(0.7,0.7);
+		graphics.translate(0,-1.5);
+
+		graphics.save();
+		graphics.translate(0,-2.6);
+		graphics.fillStyle = "blue";
+		graphics.scale(1,2.7);
+		filledTriangle();
+		graphics.restore();
+
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.translate(2,0);
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.scale(0.5,0.5);
+		regularDodecagon();
+		graphics.restore();
+
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.translate(-2,0);
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.scale(0.5,0.5);
+		regularDodecagon();
+		graphics.restore();
+
+		
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.translate(2,0);
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.restore();
+
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.translate(-2,0);
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.restore();
+
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.scale(4,0.1);
+		graphics.fillStyle = "red";
+		filledRect();
+		graphics.restore();
+		
+		graphics.restore();
+
+
+
+		graphics.save();
+		graphics.scale(0.6,0.6);
+		graphics.translate(-4,2);
+
+
+		graphics.save();
+		graphics.translate(0,-2.6);
+		graphics.fillStyle = "purple";
+		graphics.scale(1,2.7);
+		filledTriangle();
+		graphics.restore();
+
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.translate(2,0);
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.scale(0.5,0.5);
+		regularDodecagon();
+		graphics.restore();
+
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.translate(-2,0);
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.scale(0.5,0.5);
+		regularDodecagon();
+		graphics.restore();
+
+		
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.translate(2,0);
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.restore();
+
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.translate(-2,0);
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.restore();
+
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.scale(4,0.1);
+		graphics.fillStyle = "red";
+		filledRect();
+		graphics.restore();
+		
+
+
+		graphics.restore();
+
+
+
+		graphics.save();
+		graphics.scale(0.5,0.5);
+		graphics.translate(4,3);
+
+
+				graphics.save();
+		graphics.translate(0,-2.6);
+		graphics.fillStyle = "green";
+		graphics.scale(1,2.7);
+		filledTriangle();
+		graphics.restore();
+
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.translate(2,0);
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.scale(0.5,0.5);
+		regularDodecagon();
+		graphics.restore();
+
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.translate(-2,0);
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.scale(0.5,0.5);
+		regularDodecagon();
+		graphics.restore();
+
+		
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.translate(2,0);
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.restore();
+
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.translate(-2,0);
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.rotate(Math.PI/180 * 30 );
+		line();
+		graphics.restore();
+
+		graphics.save();
+		graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
+		graphics.scale(4,0.1);
+		graphics.fillStyle = "red";
+		filledRect();
+		graphics.restore();
+
+		graphics.restore();
+
+
+	
     }
     
     /**
@@ -54,6 +287,10 @@
         filledRect();
         graphics.restore();
     }
+
+
+
+
 
 
     //------------------- Some methods for drawing basic shapes. ----------------
@@ -86,13 +323,29 @@
     }
 
 	function filledTriangle(g2) {// Filled Triangle, width 1, height 1, center of base at (0,0)
-		g2.beginPath();
-		g2.moveTo(-0.5,0);
-		g2.lineTo(0.5,0);
-		g2.lineTo(0,1);
-		g2.closePath();
-		g2.fill();
+		graphics.beginPath();
+		graphics.moveTo(-0.5,0);
+		graphics.lineTo(0.5,0);
+		graphics.lineTo(0,1);
+		graphics.closePath();
+		graphics.fill();
 	}
+
+
+function regularDodecagon() {
+    graphics.beginPath();
+    graphics.moveTo(Math.cos(0), Math.sin(0));
+    var angle = (2 * Math.PI) / 12;
+    for (var i = 1; i <= 12; i++) {
+        var x = Math.cos(angle * i);
+        var y = Math.sin(angle * i);
+        graphics.lineTo(x, y);
+    }
+    graphics.closePath();
+    graphics.lineWidth = 0.1;
+    graphics.stroke();
+}
+
 
  
 
@@ -201,5 +454,6 @@
 </div>
 
 
-</body>
-</html>
+
+
+</body></html>
